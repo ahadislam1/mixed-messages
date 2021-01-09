@@ -12,8 +12,11 @@ const message = {
 const getRandString = (arr) => arr[arr.length * Math.random() << 0];
 
 const mixedMessage = () => {
-    console.log('mixed');
+    const greeting = getRandString(greetings);
+    const person = getRandString(people);
+    const predicate = getRandString(predicates);
+
+    console.log(`${greeting} ${person}, ${predicate}`);
 };
 
 mixedMessage();
-console.log(getRandString(greetings));
